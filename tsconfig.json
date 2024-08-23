@@ -1,0 +1,17 @@
+{
+    // 1. 타입스크립트 파일이 어디에 위치하는지
+    "include": ["src"],
+    "compilerOptions": {
+        // 2. 컴파일된 자바스크립트 파일이 어디에 위치할지
+        "outDir": "build",
+        // 3. 컴파일할 자바스크립트 버전
+        "target": "ES6",
+        // 4. 실행환경에 따른 라이브러리 정의 파일 선택? 예) "DOM" 추가하면 document 사용 가능
+        "lib": ["ES6"],
+        "strict": true,
+        // 5. 정의 파일 없을 때 생 자바스크립트 사용
+        // "allowJs": true,
+        "esModuleInterop": true,
+        "module": "CommonJS"
+    }
+}
