@@ -13,10 +13,10 @@ declare module "lodash" {
     function toString(value: any): string;
 
     // Splits `string` by `separator`.
-    function split(string: string, separator: [RegExp | string], limit: number): string[];
+    function split(string: string, separator: RegExp | string, limit: number): string[];
 
     // Checks if `path` is a direct property of `object`.
-    function hasPath(object: Object, path: [any[] | string]): boolean;
+    function hasPath(object: Object, path: any[] | string): boolean;
 
     // Iterates over elements of `array`, returning an array of all elements
     // `predicate` returns truthy for. The predicate is invoked with three
